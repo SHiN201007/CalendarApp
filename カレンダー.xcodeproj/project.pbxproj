@@ -16,6 +16,8 @@
 		06A8FACE233E633300B613A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A8FACD233E633300B613A2 /* GoogleService-Info.plist */; };
 		06E44169233E6A4D00B2FA77 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E44168233E6A4D00B2FA77 /* Register.storyboard */; };
 		06E4416B233E6A7700B2FA77 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */; };
+		06E4416D233E6E5900B2FA77 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */; };
+		06E4416F233E6E6800B2FA77 /* UserSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		06A8FACD233E633300B613A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		06E44168233E6A4D00B2FA77 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettingViewController.swift; path = ../UserSettingViewController.swift; sourceTree = "<group>"; };
+		06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserSetting.storyboard; path = ../UserSetting.storyboard; sourceTree = "<group>"; };
 		1008B271B3B3702D750F52B4 /* Pods-カレンダー.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-カレンダー.debug.xcconfig"; path = "Target Support Files/Pods-カレンダー/Pods-カレンダー.debug.xcconfig"; sourceTree = "<group>"; };
 		887A7C2F87E4B7BB8D423AAE /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1509321DE3F0FF36B0F1C36 /* Pods-カレンダー.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-カレンダー.release.xcconfig"; path = "Target Support Files/Pods-カレンダー/Pods-カレンダー.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 				06A1E79F233E0ED800587FFE /* SceneDelegate.swift */,
 				06A8FACC233E630C00B613A2 /* Login */,
 				06E44167233E6A0C00B2FA77 /* Register */,
+				06E44170233E6E6C00B2FA77 /* UserSetting */,
 				06A1E7A6233E0ED900587FFE /* Assets.xcassets */,
 				06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */,
 				06A1E7AB233E0ED900587FFE /* Info.plist */,
@@ -95,6 +100,15 @@
 				06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */,
 			);
 			name = Register;
+			sourceTree = "<group>";
+		};
+		06E44170233E6E6C00B2FA77 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */,
+				06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */,
+			);
+			path = UserSetting;
 			sourceTree = "<group>";
 		};
 		8BD95E55FA5CBDA88C367BE1 /* Pods */ = {
@@ -178,6 +192,7 @@
 				06A8FACE233E633300B613A2 /* GoogleService-Info.plist in Resources */,
 				06A1E7AA233E0ED900587FFE /* LaunchScreen.storyboard in Resources */,
 				06A1E7A7233E0ED900587FFE /* Assets.xcassets in Resources */,
+				06E4416F233E6E6800B2FA77 /* UserSetting.storyboard in Resources */,
 				06E44169233E6A4D00B2FA77 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E4416D233E6E5900B2FA77 /* UserSettingViewController.swift in Sources */,
 				06A8FACB233E62B900B613A2 /* ViewController.swift in Sources */,
 				06A1E79E233E0ED800587FFE /* AppDelegate.swift in Sources */,
 				06A1E7A0233E0ED800587FFE /* SceneDelegate.swift in Sources */,

@@ -2,7 +2,7 @@
 //  UserSettingViewController.swift
 //  カレンダー
 //
-//  Created by 松丸真 on 2019/09/27.
+//  Created by 松丸真 on 2019/09/28.
 //  Copyright © 2019 松丸真. All rights reserved.
 //
 

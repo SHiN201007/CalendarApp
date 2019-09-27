@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
       else {
         print("ログインできました")
         // 遷移
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard: UIStoryboard = UIStoryboard(name: "UserSetting", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController()
         nextView!.modalPresentationStyle = .fullScreen
         self.present(nextView!, animated: true, completion: nil)
