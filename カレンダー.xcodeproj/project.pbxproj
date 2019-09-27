@@ -11,14 +11,8 @@
 		06A1E7A0233E0ED800587FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E79F233E0ED800587FFE /* SceneDelegate.swift */; };
 		06A1E7A7233E0ED900587FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7A6233E0ED900587FFE /* Assets.xcassets */; };
 		06A1E7AA233E0ED900587FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */; };
-		06A1E7B3233E10AF00587FFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7B2233E10AF00587FFE /* LoginViewController.swift */; };
-		06A1E7B5233E10C700587FFE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7B4233E10C700587FFE /* Login.storyboard */; };
-		06A1E7B7233E10F400587FFE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7B6233E10F400587FFE /* RegisterViewController.swift */; };
-		06A1E7B9233E110500587FFE /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7B8233E110500587FFE /* Register.storyboard */; };
-		06A1E7BC233E117C00587FFE /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7BB233E117C00587FFE /* UserSettingViewController.swift */; };
-		06A1E7BE233E302500587FFE /* UserSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7BD233E302500587FFE /* UserSetting.storyboard */; };
-		06A1E7C1233E304200587FFE /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7C0233E304200587FFE /* CalendarViewController.swift */; };
-		06A1E7C3233E305A00587FFE /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7C2233E305A00587FFE /* Calendar.storyboard */; };
+		06A8FAC9233E62A100B613A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A8FAC8233E62A100B613A2 /* Main.storyboard */; };
+		06A8FACB233E62B900B613A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8FACA233E62B900B613A2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,14 +22,8 @@
 		06A1E7A6233E0ED900587FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A1E7A9233E0ED900587FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A1E7AB233E0ED900587FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06A1E7B2233E10AF00587FFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		06A1E7B4233E10C700587FFE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		06A1E7B6233E10F400587FFE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
-		06A1E7B8233E110500587FFE /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Register.storyboard; path = ../Register.storyboard; sourceTree = "<group>"; };
-		06A1E7BB233E117C00587FFE /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettingViewController.swift; path = ../UserSettingViewController.swift; sourceTree = "<group>"; };
-		06A1E7BD233E302500587FFE /* UserSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserSetting.storyboard; path = ../UserSetting.storyboard; sourceTree = "<group>"; };
-		06A1E7C0233E304200587FFE /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = ../CalendarViewController.swift; sourceTree = "<group>"; };
-		06A1E7C2233E305A00587FFE /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Calendar.storyboard; path = ../Calendar.storyboard; sourceTree = "<group>"; };
+		06A8FAC8233E62A100B613A2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		06A8FACA233E62B900B613A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,51 +58,13 @@
 			children = (
 				06A1E79D233E0ED800587FFE /* AppDelegate.swift */,
 				06A1E79F233E0ED800587FFE /* SceneDelegate.swift */,
-				06A1E7B1233E105100587FFE /* Login */,
-				06A1E7BA233E110C00587FFE /* Register */,
-				06A1E7BF233E302C00587FFE /* UserSetting */,
-				06A1E7C4233E306000587FFE /* Calendar */,
 				06A1E7A6233E0ED900587FFE /* Assets.xcassets */,
 				06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */,
 				06A1E7AB233E0ED900587FFE /* Info.plist */,
+				06A8FAC8233E62A100B613A2 /* Main.storyboard */,
+				06A8FACA233E62B900B613A2 /* ViewController.swift */,
 			);
 			path = "カレンダー";
-			sourceTree = "<group>";
-		};
-		06A1E7B1233E105100587FFE /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				06A1E7B2233E10AF00587FFE /* LoginViewController.swift */,
-				06A1E7B4233E10C700587FFE /* Login.storyboard */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		06A1E7BA233E110C00587FFE /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				06A1E7B6233E10F400587FFE /* RegisterViewController.swift */,
-				06A1E7B8233E110500587FFE /* Register.storyboard */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		06A1E7BF233E302C00587FFE /* UserSetting */ = {
-			isa = PBXGroup;
-			children = (
-				06A1E7BB233E117C00587FFE /* UserSettingViewController.swift */,
-				06A1E7BD233E302500587FFE /* UserSetting.storyboard */,
-			);
-			path = UserSetting;
-			sourceTree = "<group>";
-		};
-		06A1E7C4233E306000587FFE /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				06A1E7C0233E304200587FFE /* CalendarViewController.swift */,
-				06A1E7C2233E305A00587FFE /* Calendar.storyboard */,
-			);
-			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +125,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A1E7C3233E305A00587FFE /* Calendar.storyboard in Resources */,
-				06A1E7BE233E302500587FFE /* UserSetting.storyboard in Resources */,
+				06A8FAC9233E62A100B613A2 /* Main.storyboard in Resources */,
 				06A1E7AA233E0ED900587FFE /* LaunchScreen.storyboard in Resources */,
 				06A1E7A7233E0ED900587FFE /* Assets.xcassets in Resources */,
-				06A1E7B5233E10C700587FFE /* Login.storyboard in Resources */,
-				06A1E7B9233E110500587FFE /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A1E7C1233E304200587FFE /* CalendarViewController.swift in Sources */,
-				06A1E7BC233E117C00587FFE /* UserSettingViewController.swift in Sources */,
-				06A1E7B3233E10AF00587FFE /* LoginViewController.swift in Sources */,
+				06A8FACB233E62B900B613A2 /* ViewController.swift in Sources */,
 				06A1E79E233E0ED800587FFE /* AppDelegate.swift in Sources */,
 				06A1E7A0233E0ED800587FFE /* SceneDelegate.swift in Sources */,
-				06A1E7B7233E10F400587FFE /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
