@@ -12,5 +12,7 @@ target 'カレンダー' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth’
   pod 'Firebase/Core'
-
+  # カレンダーライブラリ
+  pod 'FSCalendar'
+  pod 'CalculateCalendarLogic'
 end
