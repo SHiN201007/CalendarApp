@@ -22,6 +22,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     emailTextField.delegate = self
     passwordTextField.delegate = self
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    //もしLoginしているなら
+    if let _ = UserDefaults.standard.object(forKey: "login") as? String{
+      // 遷移
+      let storyboard: UIStoryboard = UIStoryboard(name: "Calendar", bundle: nil)
+      let nextView = storyboard.instantiateInitialViewController()
+      nextView!.modalPresentationStyle = .fullScreen
+      self.present(nextView!, animated: true, completion: nil)
+    }
+  }
     
   @IBAction func loginButton(_ sender: Any) {
     login()
@@ -42,6 +55,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
       }
       else {
         print("ログインできました")
+        
+        //UserDefaultsに値を登録
+        UserDefaults.standard.set(self.emailTextField.text, forKey: "login")
+        
         // 遷移
         let storyboard: UIStoryboard = UIStoryboard(name: "UserSetting", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController()
