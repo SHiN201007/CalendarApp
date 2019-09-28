@@ -13,14 +13,26 @@ import FirebaseFirestore
 import FSCalendar
 import CalculateCalendarLogic
 
-class CalendarViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSource,FSCalendarDelegateAppearance {
+var selectDay:String = "" // global変数 
+
+class CalendarViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSource,FSCalendarDelegateAppearance{
   @IBOutlet weak var calendar: FSCalendar!
+  @IBOutlet weak var dayLabel: UILabel!
+  @IBOutlet weak var eventLabel: UILabel!
+  @IBOutlet weak var addButton: UIButton!
+  @IBOutlet weak var textView: UITextView!
+  
+  var eventTextField:UITextField?
+  var titles:String?
+  var days:String?
+  var contents:String?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     weekdays()
 
+    dayLabel.text = getToday(format:"MM月dd日")
     // デリゲートの設定
     self.calendar.dataSource = self
     self.calendar.delegate = self
@@ -93,6 +105,72 @@ class CalendarViewController: UIViewController, FSCalendarDelegate,FSCalendarDat
     return nil
   }
   
+  // カレンダーをタップしたとき
+  func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+    getData() // 取得したデータ
+    
+    let tmpDate = Calendar(identifier: .gregorian)
+    let month = tmpDate.component(.month, from: date)
+    let day = tmpDate.component(.day, from: date)
+    selectDay = "\(month)月\(day)日"
+    print(selectDay)
+    // データがある日の場合
+    if days == selectDay {
+      if titles != "" {
+        eventLabel.text = titles
+        eventLabel.textColor = .darkGray
+        textView.text = contents
+        textView.textColor = .darkGray
+      }
+    }else {
+      // 予定がない場合
+      eventLabel.text = "スケジュールはありません"
+      eventLabel.textColor = .lightGray
+      textView.text = ""
+    }
+    
+    dayLabel.text = "\(selectDay)"
+  }
+  
+  // 今日の日付を取得
+  func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String{
+    let now = Date()
+    let formatter = DateFormatter()
+    formatter.dateFormat = format
+    return formatter.string(from: now as Date)
+  }
+  
+  // firebaseからデータを取得
+  func getData() {
+    let user = Auth.auth().currentUser
+    let db = Firestore.firestore().collection("users")
+    
+    db.document(user?.uid ?? "a").getDocument() { [weak self] snapshot, error in//ここで一旦が処理が飛んで、最後に以下が処理される
+      guard let self = self else { return }
+      guard Auth.auth().currentUser != nil else { return }
+      
+      if error != nil {return}
+      guard let snapshot = snapshot, snapshot.exists,
+        let data = snapshot.data() else {return}
+      
+      let title:String = data["title"] as! String
+      self.titles = title
+      let day:String = data["selectDay"] as! String
+      self.days = day
+      let content:String = data["content"] as! String
+      self.contents = content
+      print(self.titles ?? "nil", self.days ?? "nil", self.contents ?? "nil")
+    }
+  }
+  
+  @IBAction func addButton(_ sender: Any) {
+    // AddEvent遷移
+    let storyboard: UIStoryboard = UIStoryboard(name: "AddEvent", bundle: nil)
+    let nextView = storyboard.instantiateInitialViewController()
+    nextView!.modalPresentationStyle = .fullScreen
+    self.present(nextView!, animated: true, completion: nil)
+  }
+  
   // ログアウト
   @IBAction func logoutButton(_ sender: Any) {
     try? Auth.auth().signOut()
@@ -104,4 +182,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate,FSCalendarDat
     self.present(nextView!, animated: true, completion: nil)
   }
   
+
+  
 }
+

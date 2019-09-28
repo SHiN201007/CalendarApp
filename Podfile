@@ -12,6 +12,8 @@ target 'カレンダー' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth’
   pod 'Firebase/Core'
+  
+  pod 'RealmSwift'
   # カレンダーライブラリ
   pod 'FSCalendar'
   pod 'CalculateCalendarLogic'

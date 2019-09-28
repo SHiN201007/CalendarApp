@@ -15,16 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55O-nn-OzS">
-                                <rect key="frame" x="168.5" y="782" width="77" height="30"/>
-                                <state key="normal" title="ログアウト"/>
-                                <connections>
-                                    <action selector="logoutButton:" destination="0Q1-RM-0tg" eventType="touchUpInside" id="QFd-SY-Ftm"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LT4-RA-gCO" customClass="FSCalendar">
-                                <rect key="frame" x="30" y="144" width="354" height="608"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="30" y="44" width="354" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Xre-yk-xrq"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年 MM月"/>
                                 </userDefinedRuntimeAttributes>
@@ -33,22 +28,73 @@
                                     <outlet property="delegate" destination="0Q1-RM-0tg" id="Bxs-Xj-os1"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axs-K8-kFC">
+                                <rect key="frame" x="30" y="554" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1Cj-pV-js8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55O-nn-OzS">
+                                <rect key="frame" x="307" y="554" width="77" height="30"/>
+                                <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="0Q1-RM-0tg" eventType="touchUpInside" id="QFd-SY-Ftm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ7-UL-84P">
+                                <rect key="frame" x="30" y="605" width="354" height="21"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o7-NV-lUq">
+                                <rect key="frame" x="200" y="809" width="153" height="30"/>
+                                <state key="normal" title="追加する"/>
+                                <connections>
+                                    <action selector="addButton:" destination="0Q1-RM-0tg" eventType="touchUpInside" id="av7-QH-cDM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A5E-ZP-vvf">
+                                <rect key="frame" x="30" y="646" width="354" height="143"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="h5D-FW-NLM" firstAttribute="trailing" secondItem="LT4-RA-gCO" secondAttribute="trailing" constant="30" id="CN1-HW-k7a"/>
-                            <constraint firstItem="55O-nn-OzS" firstAttribute="top" secondItem="LT4-RA-gCO" secondAttribute="bottom" constant="30" id="Qop-Ha-wQ5"/>
-                            <constraint firstItem="LT4-RA-gCO" firstAttribute="top" secondItem="h5D-FW-NLM" secondAttribute="top" constant="100" id="TMy-dN-dW7"/>
+                            <constraint firstItem="3o7-NV-lUq" firstAttribute="top" secondItem="A5E-ZP-vvf" secondAttribute="bottom" constant="20" id="D3b-1n-ZuL"/>
+                            <constraint firstItem="Axs-K8-kFC" firstAttribute="top" secondItem="LT4-RA-gCO" secondAttribute="bottom" constant="10" id="FIf-6w-psa"/>
+                            <constraint firstItem="h5D-FW-NLM" firstAttribute="trailing" secondItem="TJ7-UL-84P" secondAttribute="trailing" constant="30" id="JcG-Nc-PEl"/>
+                            <constraint firstItem="h5D-FW-NLM" firstAttribute="trailing" secondItem="55O-nn-OzS" secondAttribute="trailing" constant="30" id="L1I-v2-G9c"/>
+                            <constraint firstItem="Axs-K8-kFC" firstAttribute="leading" secondItem="h5D-FW-NLM" secondAttribute="leading" constant="30" id="NVq-14-hbP"/>
+                            <constraint firstItem="A5E-ZP-vvf" firstAttribute="top" secondItem="TJ7-UL-84P" secondAttribute="bottom" constant="20" id="S3A-hO-bTl"/>
+                            <constraint firstItem="LT4-RA-gCO" firstAttribute="top" secondItem="h5D-FW-NLM" secondAttribute="top" id="TMy-dN-dW7"/>
                             <constraint firstItem="LT4-RA-gCO" firstAttribute="centerX" secondItem="yRa-bT-XwA" secondAttribute="centerX" id="Yen-jz-074"/>
-                            <constraint firstItem="h5D-FW-NLM" firstAttribute="bottom" secondItem="55O-nn-OzS" secondAttribute="bottom" constant="50" id="Yy3-fR-Qsk"/>
+                            <constraint firstItem="h5D-FW-NLM" firstAttribute="trailing" secondItem="A5E-ZP-vvf" secondAttribute="trailing" constant="30" id="ZIc-rP-Cu1"/>
+                            <constraint firstItem="55O-nn-OzS" firstAttribute="top" secondItem="LT4-RA-gCO" secondAttribute="bottom" constant="10" id="asd-Bj-W4s"/>
+                            <constraint firstItem="A5E-ZP-vvf" firstAttribute="leading" secondItem="h5D-FW-NLM" secondAttribute="leading" constant="30" id="bJa-br-dSO"/>
+                            <constraint firstItem="h5D-FW-NLM" firstAttribute="trailing" secondItem="3o7-NV-lUq" secondAttribute="trailing" constant="61" id="cz1-sy-VkO"/>
+                            <constraint firstItem="3o7-NV-lUq" firstAttribute="leading" secondItem="h5D-FW-NLM" secondAttribute="leading" constant="200" id="gXG-bf-RNG"/>
                             <constraint firstItem="LT4-RA-gCO" firstAttribute="leading" secondItem="h5D-FW-NLM" secondAttribute="leading" constant="30" id="jMI-9N-eDk"/>
-                            <constraint firstItem="55O-nn-OzS" firstAttribute="centerX" secondItem="yRa-bT-XwA" secondAttribute="centerX" id="qAl-qO-XLf"/>
-                            <constraint firstItem="LT4-RA-gCO" firstAttribute="centerY" secondItem="yRa-bT-XwA" secondAttribute="centerY" id="vaD-oD-Te1"/>
+                            <constraint firstItem="TJ7-UL-84P" firstAttribute="top" secondItem="Axs-K8-kFC" secondAttribute="bottom" constant="30" id="n8C-fw-Au9"/>
+                            <constraint firstItem="TJ7-UL-84P" firstAttribute="leading" secondItem="h5D-FW-NLM" secondAttribute="leading" constant="30" id="vBr-nN-VpS"/>
+                            <constraint firstItem="h5D-FW-NLM" firstAttribute="bottom" secondItem="3o7-NV-lUq" secondAttribute="bottom" constant="23" id="xxp-IN-HXF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h5D-FW-NLM"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="3o7-NV-lUq" id="ilG-Yv-Kan"/>
                         <outlet property="calendar" destination="LT4-RA-gCO" id="R7N-O8-c4W"/>
+                        <outlet property="dayLabel" destination="Axs-K8-kFC" id="pXV-cL-HNJ"/>
+                        <outlet property="eventLabel" destination="TJ7-UL-84P" id="82f-i2-tew"/>
+                        <outlet property="textView" destination="A5E-ZP-vvf" id="MWn-4N-bCO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rn-Mm-rGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

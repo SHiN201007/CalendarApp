@@ -33,6 +33,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
       }
       else {
         print("登録できました")
+        self.setdata()
         //        Loginへ遷移
         self.dismiss(animated: true, completion: nil)
       }
@@ -40,11 +41,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
   }
   
   // セットデータベース
-  func setdata(){
+  private func setdata(){
     if let user = Auth.auth().currentUser{//データが取得できなかったらスキップ。
       let db = Firestore.firestore().collection("users")
       db.document(user.uid).setData([
         "userID": user.uid,
+        "selectDay": "",
+        "title": "",
+        "content": "",
       ])
     }
   }
