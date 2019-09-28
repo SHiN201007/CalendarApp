@@ -25,6 +25,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LT4-RA-gCO" customClass="FSCalendar">
                                 <rect key="frame" x="30" y="144" width="354" height="608"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年 MM月"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="0Q1-RM-0tg" id="ttU-VS-iaY"/>
                                     <outlet property="delegate" destination="0Q1-RM-0tg" id="Bxs-Xj-os1"/>
