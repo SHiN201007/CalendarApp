@@ -10,7 +10,7 @@ target 'カレンダー' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
-  pod 'Firebase/Aut'h
+  pod 'Firebase/Auth'
   pod 'Firebase/Core'
   
   pod 'RealmSwift'
