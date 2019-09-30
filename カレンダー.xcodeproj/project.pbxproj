@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		06A1E79E233E0ED800587FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E79D233E0ED800587FFE /* AppDelegate.swift */; };
 		06A1E7A0233E0ED800587FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E79F233E0ED800587FFE /* SceneDelegate.swift */; };
-		06A1E7A2233E0ED800587FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7A1233E0ED800587FFE /* ViewController.swift */; };
-		06A1E7A5233E0ED800587FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7A3233E0ED800587FFE /* Main.storyboard */; };
 		06A1E7A7233E0ED900587FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7A6233E0ED900587FFE /* Assets.xcassets */; };
 		06A1E7AA233E0ED900587FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */; };
+		06A8FAC9233E62A100B613A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A8FAC8233E62A100B613A2 /* Main.storyboard */; };
+		06A8FACB233E62B900B613A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8FACA233E62B900B613A2 /* ViewController.swift */; };
+		06A8FACE233E633300B613A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A8FACD233E633300B613A2 /* GoogleService-Info.plist */; };
+		06E44169233E6A4D00B2FA77 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E44168233E6A4D00B2FA77 /* Register.storyboard */; };
+		06E4416B233E6A7700B2FA77 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */; };
+		06E4416D233E6E5900B2FA77 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */; };
+		06E4416F233E6E6800B2FA77 /* UserSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */; };
+		06E44172233E735900B2FA77 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E44171233E735900B2FA77 /* CalendarViewController.swift */; };
+		06E44174233E736900B2FA77 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E44173233E736900B2FA77 /* Calendar.storyboard */; };
+		06E4417B233FA01900B2FA77 /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E4417A233FA01900B2FA77 /* AddEvent.storyboard */; };
+		06E4417D233FA02700B2FA77 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4417C233FA02700B2FA77 /* AddEventViewController.swift */; };
+		89FBDB506E28874A3285D6D9 /* Pods_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887A7C2F87E4B7BB8D423AAE /* Pods_______.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06A1E79A233E0ED800587FFE /* カレンダー.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "カレンダー.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A1E79A233E0ED800587FFE /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A1E79D233E0ED800587FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A1E79F233E0ED800587FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06A1E7A1233E0ED800587FFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06A1E7A4233E0ED800587FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A1E7A6233E0ED900587FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A1E7A9233E0ED900587FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A1E7AB233E0ED900587FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A8FAC8233E62A100B613A2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		06A8FACA233E62B900B613A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		06A8FACD233E633300B613A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		06E44168233E6A4D00B2FA77 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettingViewController.swift; path = ../UserSettingViewController.swift; sourceTree = "<group>"; };
+		06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserSetting.storyboard; path = ../UserSetting.storyboard; sourceTree = "<group>"; };
+		06E44171233E735900B2FA77 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = ../CalendarViewController.swift; sourceTree = "<group>"; };
+		06E44173233E736900B2FA77 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Calendar.storyboard; path = ../Calendar.storyboard; sourceTree = "<group>"; };
+		06E4417A233FA01900B2FA77 /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AddEvent.storyboard; path = ../AddEvent.storyboard; sourceTree = "<group>"; };
+		06E4417C233FA02700B2FA77 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddEventViewController.swift; path = ../AddEventViewController.swift; sourceTree = "<group>"; };
+		1008B271B3B3702D750F52B4 /* Pods-カレンダー.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-カレンダー.debug.xcconfig"; path = "Target Support Files/Pods-カレンダー/Pods-カレンダー.debug.xcconfig"; sourceTree = "<group>"; };
+		887A7C2F87E4B7BB8D423AAE /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_______.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1509321DE3F0FF36B0F1C36 /* Pods-カレンダー.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-カレンダー.release.xcconfig"; path = "Target Support Files/Pods-カレンダー/Pods-カレンダー.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FBDB506E28874A3285D6D9 /* Pods_______.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,13 +65,15 @@
 			children = (
 				06A1E79C233E0ED800587FFE /* カレンダー */,
 				06A1E79B233E0ED800587FFE /* Products */,
+				8BD95E55FA5CBDA88C367BE1 /* Pods */,
+				CBDDA6833DFC464B6A61542F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		06A1E79B233E0ED800587FFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06A1E79A233E0ED800587FFE /* カレンダー.app */,
+				06A1E79A233E0ED800587FFE /* Calendar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +83,79 @@
 			children = (
 				06A1E79D233E0ED800587FFE /* AppDelegate.swift */,
 				06A1E79F233E0ED800587FFE /* SceneDelegate.swift */,
-				06A1E7A1233E0ED800587FFE /* ViewController.swift */,
-				06A1E7A3233E0ED800587FFE /* Main.storyboard */,
+				06A8FACC233E630C00B613A2 /* Login */,
+				06E44167233E6A0C00B2FA77 /* Register */,
+				06E44170233E6E6C00B2FA77 /* UserSetting */,
+				06E44175233E736E00B2FA77 /* Calendar */,
 				06A1E7A6233E0ED900587FFE /* Assets.xcassets */,
 				06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */,
 				06A1E7AB233E0ED900587FFE /* Info.plist */,
+				06A8FACD233E633300B613A2 /* GoogleService-Info.plist */,
 			);
 			path = "カレンダー";
+			sourceTree = "<group>";
+		};
+		06A8FACC233E630C00B613A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				06A8FAC8233E62A100B613A2 /* Main.storyboard */,
+				06A8FACA233E62B900B613A2 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		06E44167233E6A0C00B2FA77 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				06E44168233E6A4D00B2FA77 /* Register.storyboard */,
+				06E4416A233E6A7700B2FA77 /* RegisterViewController.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		06E44170233E6E6C00B2FA77 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				06E4416C233E6E5900B2FA77 /* UserSettingViewController.swift */,
+				06E4416E233E6E6800B2FA77 /* UserSetting.storyboard */,
+			);
+			path = UserSetting;
+			sourceTree = "<group>";
+		};
+		06E44175233E736E00B2FA77 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				06E44171233E735900B2FA77 /* CalendarViewController.swift */,
+				06E44173233E736900B2FA77 /* Calendar.storyboard */,
+				06E4417E233FA02C00B2FA77 /* AddEvent */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		06E4417E233FA02C00B2FA77 /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				06E4417A233FA01900B2FA77 /* AddEvent.storyboard */,
+				06E4417C233FA02700B2FA77 /* AddEventViewController.swift */,
+			);
+			path = AddEvent;
+			sourceTree = "<group>";
+		};
+		8BD95E55FA5CBDA88C367BE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1008B271B3B3702D750F52B4 /* Pods-カレンダー.debug.xcconfig */,
+				D1509321DE3F0FF36B0F1C36 /* Pods-カレンダー.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBDDA6833DFC464B6A61542F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887A7C2F87E4B7BB8D423AAE /* Pods_______.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A1E7AE233E0ED900587FFE /* Build configuration list for PBXNativeTarget "カレンダー" */;
 			buildPhases = (
+				74EB4197B93CA875AF41D2AE /* [CP] Check Pods Manifest.lock */,
 				06A1E796233E0ED800587FFE /* Sources */,
 				06A1E797233E0ED800587FFE /* Frameworks */,
 				06A1E798233E0ED800587FFE /* Resources */,
+				E3F73C414F12807A0881DD25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +177,7 @@
 			);
 			name = "カレンダー";
 			productName = "カレンダー";
-			productReference = 06A1E79A233E0ED800587FFE /* カレンダー.app */;
+			productReference = 06A1E79A233E0ED800587FFE /* Calendar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06A1E795233E0ED800587FFE /* Build configuration list for PBXProject "カレンダー" */;
+			buildConfigurationList = 06A1E795233E0ED800587FFE /* Build configuration list for PBXProject "カレンダー" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,36 +218,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A8FAC9233E62A100B613A2 /* Main.storyboard in Resources */,
+				06A8FACE233E633300B613A2 /* GoogleService-Info.plist in Resources */,
 				06A1E7AA233E0ED900587FFE /* LaunchScreen.storyboard in Resources */,
 				06A1E7A7233E0ED900587FFE /* Assets.xcassets in Resources */,
-				06A1E7A5233E0ED800587FFE /* Main.storyboard in Resources */,
+				06E4416F233E6E6800B2FA77 /* UserSetting.storyboard in Resources */,
+				06E4417B233FA01900B2FA77 /* AddEvent.storyboard in Resources */,
+				06E44169233E6A4D00B2FA77 /* Register.storyboard in Resources */,
+				06E44174233E736900B2FA77 /* Calendar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74EB4197B93CA875AF41D2AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-カレンダー-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F73C414F12807A0881DD25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-カレンダー/Pods-カレンダー-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-カレンダー/Pods-カレンダー-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-カレンダー/Pods-カレンダー-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06A1E796233E0ED800587FFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A1E7A2233E0ED800587FFE /* ViewController.swift in Sources */,
+				06E44172233E735900B2FA77 /* CalendarViewController.swift in Sources */,
+				06E4417D233FA02700B2FA77 /* AddEventViewController.swift in Sources */,
+				06E4416D233E6E5900B2FA77 /* UserSettingViewController.swift in Sources */,
+				06A8FACB233E62B900B613A2 /* ViewController.swift in Sources */,
 				06A1E79E233E0ED800587FFE /* AppDelegate.swift in Sources */,
 				06A1E7A0233E0ED800587FFE /* SceneDelegate.swift in Sources */,
+				06E4416B233E6A7700B2FA77 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		06A1E7A3233E0ED800587FFE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A1E7A4233E0ED800587FFE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06A1E7A8233E0ED900587FFE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,17 +418,18 @@
 		};
 		06A1E7AF233E0ED900587FFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1008B271B3B3702D750F52B4 /* Pods-カレンダー.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 657Z774V99;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "カレンダー/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i-m-107-sin.------";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calendar;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +437,18 @@
 		};
 		06A1E7B0233E0ED900587FFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1509321DE3F0FF36B0F1C36 /* Pods-カレンダー.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 657Z774V99;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "カレンダー/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.softbank.i-m-107-sin.------";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calendar;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06A1E795233E0ED800587FFE /* Build configuration list for PBXProject "カレンダー" */ = {
+		06A1E795233E0ED800587FFE /* Build configuration list for PBXProject "カレンダー" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A1E7AC233E0ED900587FFE /* Debug */,
